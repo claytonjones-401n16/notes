@@ -1,0 +1,31 @@
+{
+  "name": "@claytonjones7/notes",
+  "version": "1.2.0",
+  "description": "Notes Application",
+  "main": "index.js",
+  "bin": {
+    "notes": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claytonjones-401n16/lab-01.git"
+  },
+  "keywords": [],
+  "author": "Clayton Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claytonjones-401n16/lab-01/issues"
+  },
+  "homepage": "https://github.com/claytonjones-401n16/lab-01#readme",
+  "dependencies": {
+    "jest": "^25.1.0",
+    "minimist": "^1.2.5",
+    "mongoose": "^5.9.5"
+  }
+}
