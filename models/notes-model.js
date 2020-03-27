@@ -42,9 +42,8 @@ class Notes {
 
   async update(_id, newRecord) {
     try {
-      
-      let updatedRecord = await this.model.findOneAndUpdate({_id}, newRecord);
-      return updatedRecord;
+      let numberModified = await this.model.updateOne({_id}, newRecord);
+      return numberModified;
 
     } catch(e) {
       console.error('ERROR! Could not update record');
@@ -65,7 +64,7 @@ class Notes {
 
         console.error('ERROR! Invalid ID.');
         console.error('Search notes using "notes -l" and copy id of note you wish to delete.');
-
+        return false;
       }
   }
 
