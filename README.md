@@ -1,4 +1,4 @@
-# NOTES APPLICATION
+# Notes Application
 
 ## Notes - class 04 lab
 
@@ -6,15 +6,12 @@
 
 ### Links and Resources
 
-- [submission PR]()
-- [ci/cd: GitHub Actions]()
+- [submission PR](https://github.com/claytonjones-401n16/notes/pull/1)
+- [ci/cd: GitHub Actions](https://github.com/claytonjones-401n16/notes/actions)
 - [NPM Package](https://www.npmjs.com/package/@claytonjones7/notes)
 
 ### Setup
 
-#### `.env` requirements (where applicable)
-
-N/A
 
 #### How to initialize/run your application (where applicable)
 
@@ -32,16 +29,15 @@ N/A
 - How do you run tests?
   - `npm test`
 - Any tests of note?
-  - input module
+  - input.js
     - testing various flags and user input combinations
-  - notes module
-    - no tests as of now
-  - validator module
-    - testing all validator methods with good/bad input
-    - not necessary now, will end up deleting
+  - notes.js
+    - tests done in notes-model
+  - notes-model.js
+    - tested all CRUD functions
 - Describe any tests that you did not complete, skipped, etc
-  - notes.test.js contains fake true is truthy test. not testing mongoDB functions at the moment
+  - notes.test.js contains fake true is truthy test. mongoDB CRUD functions tested in notes-model tests
 
 #### UML
 
-![lab-01](./assets/lab-01-UML.jpg)
+![lab-01](./assets/notesUML.png)

@@ -1,6 +1,6 @@
 {
   "name": "@claytonjones7/notes",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Notes Application",
   "main": "index.js",
   "bin": {
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/claytonjones-401n16/lab-01#readme",
   "dependencies": {
+    "@code-fellows/supergoose": "^1.0.2",
     "jest": "^25.1.0",
     "minimist": "^1.2.5",
     "mongoose": "^5.9.5"
