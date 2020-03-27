@@ -1,5 +1,40 @@
 'use strict';
 
+/**
+  * Notes
+  * @module NotesModel
+  */
+
+/**
+  * Notes - interface model to be used for mongoDB CRUD operations
+  * @param mongooseModel
+  * @function Notes
+  */
+
+/**
+  * create - saves new note to database
+  * @function create
+  * @params object
+  */
+
+/**
+  * read - will list all notes (or notes of a specific category) from database
+  * @function read
+  * @params string
+  */
+
+/**
+  * update - updates a note in the database
+  * @function update
+  * @params string, object 
+  */
+
+/**
+  * delete - will delete a note in the db based on unique id
+  * @function delete
+  * @params string
+  */
+
 const mongoose = require('mongoose');
 const notesMongooseModel = require('./notes-schema.js');
 
@@ -14,7 +49,7 @@ class Notes {
       let recordToAdd = new this.model(record);
       return await recordToAdd.save();
     } catch(e) {
-      console.log('ERROR CREATING RECORD');
+      console.error('ERROR CREATING RECORD');
       return false;
     }
   }
@@ -56,7 +91,7 @@ class Notes {
 
         let deletedNote = await this.model.deleteOne({ _id });
         if (deletedNote.deletedCount > 0) console.log(`Deleted ${deletedNote.deletedCount} note(s).`);
-        else console.log('ERROR! Note ID not found.');
+        else console.error('ERROR! Note ID not found.');
 
         return deletedNote;
 
